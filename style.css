@@ -1,12 +1,17 @@
 @font-face {
-	font-family: 'ecoicon';
-	src:url('fonts/ecoicons/ecoicon.eot');
-	src:url('fonts/ecoicons/ecoicon.eot?#iefix') format('embedded-opentype'),
-		url('fonts/ecoicons/ecoicon.woff') format('woff'),
-		url('fonts/ecoicons/ecoicon.ttf') format('truetype'),
-		url('fonts/ecoicons/ecoicon.svg#ecoicon') format('svg');
-	font-weight: normal;
-	font-style: normal;
+  font-family: 'icons';
+  src:  url('fonts/icons/icomoon.eot?w21o6o');
+  src:  url('fonts/icons/icomoon.eot?w21o6o#iefix') format('embedded-opentype'),
+    url('fonts/icons/icomoon.ttf?w21o6o') format('truetype'),
+    url('fonts/icons/icomoon.woff?w21o6o') format('woff'),
+    url('fonts/icons/icomoon.svg?w21o6o#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: "Cormorant";
+    src: url(fonts/Cormorant/Cormorant-Bold.otf) format("embedded-opentype");
 }
 
 html, body {
@@ -90,17 +95,17 @@ nav {
  }
 
 #top-menu li a:hover {
-   color: red;
+   color: #50ADAD;
  }
 
  #top-menu li.active a {
-    color:blue;
+    color:#495ADF;
     /*border-bottom: 1px solid blue;*/
   }
 
   .cool-link {
       display: inline-block;
-      color: blue;
+      color: #50ADAD;
       text-decoration: none;
   }
 
@@ -109,18 +114,18 @@ nav {
       display: block;
       width: 0;
       height: 1px;
-      background: blue;
+      background: #495ADF;
       transition: width .3s;
   }
 
   .cool-link:hover::after {
       width: 100%;
-      background: red;
+      background: #50ADAD;
   }
 
   .cool-link.active:after {
       width: 100%;
-      background: blue;
+      background: #495ADF;
   }
 
 
@@ -236,43 +241,43 @@ p {
 }
 
 .gray-color-1 {
-    background: #333;
-    color: #333;
+    background: #f5f5f5;
+    color: #f5f5f5;
 }
 
 .gray-color-2 {
-  background: #555;
-  color: #555;
+  background: #353535;
+  color: #353535;
 }
 
 .gray-color-3 {
-  background: #777;
-  color: #777;
-}
-
-.gray-color-4 {
-  background: #999;
-  color: #999;
+	background: #252525;
+  color: #252525;
 }
 
 .content-color-1 {
-  background: red;
-  color: red;
+  background: #D6435A;
+  color: #D6435A;
 }
 
 .content-color-2 {
-  background: green;
-  color: green;
+  background: #50ADAD;
+  color: #50ADAD;
 }
 
 .content-color-3 {
-  background: blue;
-  color: blue;
+  background: #E4753F;
+  color: #E4753F;
 }
 
 .content-color-4 {
-  background: yellow;
-  color: yellow;
+  background: #F2B444;
+  color: #F2B444;
+}
+
+.content-color-5 {
+  background: #495ADF;
+  color: #495ADF;
 }
 
 /************ TYPOGRAPHY **************/
@@ -280,78 +285,96 @@ p {
 
 .headings-style,
 .subpage-style,
-.bold-content-style,
-.body-content-style {
+.column-title,
+.body-content-style,
+.section-title,
+.section-subtitle {
   display: flex;
   justify-content: space-between;
 }
 
 .subpage-style,
-.bold-content-style,
-.body-content-style {
+.column-title,
+.body-content-style,
+.section-title,
+.section-subtitle {
   border-top: 1px solid #eee;
 }
 
 
 .headings-style p,
 .subpage-style p,
-.bold-content-style p {
+.column-title p,
+.section-title p,
+.section-subtitle p {
   margin-top: 20px;
-  font-weight: 500;
+  font-weight: 300;
   color: #888;
   opacity: 0.5;
 }
 
 .headings-style p:first-child,
 .subpage-style p:first-child,
-.bold-content-style p:first-child,
-.body-content-style p:first-child {
+.column-title p:first-child,
+.body-content-style p:first-child,
+.section-title p:first-child,
+.section-subtitle p:first-child {
   color: #555;
 }
 .headings-style p {
-  font-size: 30px;
+  font-size: 48px;
+	font-family: 'Ubuntu', 'helvetica neue';
 }
 .subpage-style p {
   font-size: 25px;
+	font-family: 'Cormorant';
+	font-weight: 700;
 }
-.bold-content-style p,
-.body-content-style p {
-  font-size: 15px;
+.column-title p {
+	font-family: 'Cormorant';
+	font-size: 36px;
+	font-weight: bold;
 }
 
+.section-title p {
+	font-size: 36px;
+	font-family: 'Ubuntu', 'helvetica neue';
+}
+
+.section-subtitle p {
+	font-family: 'Cormorant';
+	font-size: 30px;
+	font-weight: bold;
+}
+
+
 .body-content-style p {
+	font-size: 18px;
+	font-family: 'Ubuntu', 'helvetica neue';
   font-weight: 300;
   margin-top: 20px;
   color: #888;
-  opacity: 0.5;
+	opacity: 0.5;
 }
 
 /************ PARAGRAPHS **************/
 
-.para-section {
+h4 .para-section {
   margin-bottom:0;
   font-weight: 500;
 }
 
-.default-text,
-.meta-text,
-.meta-text-80 {
+.default-text{
   margin-top: 0;
   max-width: 635px;
   line-height: 24px;
+	letter-spacing: 0.5px;
 }
 
 .default-text {
-  font-size: 15px;
-}
-
-.meta-text,
-.meta-text-80 {
-  font-size: 13px;
-}
-
-.meta-text-80 {
-  opacity: 0.8;
+  font-size: 18px;
+	line-height: 28px;
+	font-family: 'Ubuntu', 'helvetica neue';
 }
 
 .column-sub {
@@ -360,27 +383,65 @@ p {
   text-align: left;
   font-weight: 300;
 }
-
+.column-sub .column {
+	padding: 0 20px;
+}
+.sub-section-title {
+	font-size: 36px;
+	font-family: 'Cormorant';
+	font-weight: 700;
+	margin-top: 0;
+}
 /************ BUTTONS **************/
 
 .btn {
-  color: #555;
+  color: #fff;
+	background: #252525;
   cursor: pointer;
   display: block;
-  font-size:16px;
+  font-size:18px;
   font-weight: 400;
   line-height: 45px;
-  margin: 20px 0px 0px 0px;
-  max-width: 160px;
+  margin: 0 auto;
+  max-width: 250px;
   position: relative;
   text-decoration: none;
   text-transform: uppercase;
   vertical-align: middle;
   width: 100%;
+	font-family: "Ubuntu", Helvetica;
+	text-align: center;
+	font-weight: 300;
+	letter-spacing: 1px;
+	height: 45px;
+	-webkit-transition: height 0.2s, background-color 0.2s; /* For Safari 3.1 to 6.0 */
+	transition: height 0.2s, background-color 0.2s;
 }
 
-.btn-1 {
-  font-family: "Helvetica Neue", Helvetica;
+.btn:hover {
+	height: 43px;
+	background-color: #353535 ;
+	/*width: 242px;*/
+}
+
+.bg-btn {
+		margin-top: 20px;
+    width: 250px;
+		height: 48px;
+		background: #F2B444; /* For browsers that do not support gradients */
+		background: -webkit-linear-gradient(left, #F2B444, #E4753F, #D6435A, #495ADF, #50ADAD); /* For Safari 5.1 to 6.0 */
+		background: -o-linear-gradient(left, #F2B444, #E4753F, #D6435A, #495ADF, #50ADAD); /* For Opera 11.1 to 12.0 */
+		background: -moz-linear-gradient(left, #F2B444, #E4753F, #D6435A, #495ADF, #50ADAD); /* For Firefox 3.6 to 15 */
+		background: linear-gradient(left, #F2B444, #E4753F, #D6435A, #495ADF, #50ADAD); /* Standard syntax (must be last) */
+}
+/*.bg-btn:hover {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}*/
+
+/*.btn-1 {
+  font-family: "Ubuntu", Helvetica;
   text-align: center;
   font-weight: 300;
   letter-spacing: 1px;
@@ -413,7 +474,7 @@ p {
     stroke-dasharray: 15, 310;
     stroke-dashoffset: 48;
     transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
-}
+}*/
 
 
 
@@ -451,26 +512,27 @@ button{font-size:100%;}
 }
 
 .nav--zahi .nav__item::before {
-  font-family: 'ecoicon';
+  font-family: 'icons';
   position: absolute;
+  font-size: 25px;
   top: 55%;
   z-index: 1;
-  margin: 6.5px 0px 0px -4px;
+  margin: 5px 0px 0px -6px;;
   color: #555;
   -webkit-transition: -webkit-transform 0.3s, background 0.3s, color 0.3s;
 	transition: transform 0.3s, background 0.3s, color 0.3s;
 }
 .nav--zahi .nav__item-1::before {
-  content: "\e008";
+  content: "\e905";
 }
 .nav--zahi .nav__item-2::before {
-  content: "\e00b";
+  content: "\e904";
 }
 .nav--zahi .nav__item-3::before {
-  content: "\e00c";
+  content: "\e90b";
 }
 .nav--zahi .nav__item-4::before {
-  content: "\e00d";
+  content: "\e903";
 }
 
 .nav--zahi .nav__item::after {
@@ -482,29 +544,29 @@ button{font-size:100%;}
 .nav--zahi .nav__item::after {
   top: 55%;
   left: 0;
-  width: 35px;
-  height: 35px;
+  width: 40px;
+  height: 40px;
   margin: -5px 0 0 0;
   border: 2px solid #555;
   border-radius: 50%;
 	/*background: #555;*/
-	-webkit-transition: -webkit-transform 0.3s, border-color 0.3s, border-width 0.3s, background 0.3s;
-	transition: transform 0.3s, border-color 0.3s, border-width 0.3s, background 0.3s;
+	-webkit-transition: -webkit-transform 0.3s, border-color 0.3s, background 0.3s;
+	transition: transform 0.3s, border-color 0.3s, background 0.3s;
 }
 
 .nav--zahi .nav__item--current::after {
-	border-width: 1px;
+	/*border-width: 1px;*/
   background: #333;
   border: 2px solid #333;
-	-webkit-transform: scale3d(1.5,1.5,1);
-	transform: scale3d(1.5,1.5,1);
+	/*-webkit-transform: scale3d(1.5,1.5,1);
+	transform: scale3d(1.5,1.5,1);*/
 }
 
 .nav--zahi .nav__item--current::before {
-	border-width: 1px;
+	/*border-width: 1px;*/
   color: #fff;
-	-webkit-transform: scale3d(2,2,1);
-	transform: scale3d(2,2,1);
+	/*-webkit-transform: scale3d(2,2,1);
+	transform: scale3d(2,2,1);*/
 }
 
 .nav--zahi .nav__item:not(.nav__item--current):focus::after,
@@ -552,6 +614,41 @@ footer{
   margin-top: 50px;
 }
 
+/************ IMG **************/
+
+.logo-container {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.logo-container p {
+	text-align: left;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.logo-container div{
+	display: flex;
+	align-items: center;
+}
+
+.p-130x {
+	font-size: 18px;
+	color: rgb(37, 37, 37);
+}
+.p-315x {
+	font-size: 44px;
+	color: rgb(37, 37, 37);
+}
+.p-500x{
+		font-size: 70px;
+		color: rgb(37, 37, 37);
+}
+
+.img-bg {
+	width: 100%;
+  margin-top: 20px;
+}
 /************ IAN MSG **************/
 
 .ian-msg {
