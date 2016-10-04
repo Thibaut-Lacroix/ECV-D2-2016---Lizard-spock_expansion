@@ -540,7 +540,6 @@ button{font-size:100%;}
 	position: absolute;
 }
 
-
 .nav--zahi .nav__item::after {
   top: 55%;
   left: 0;
@@ -606,12 +605,15 @@ button{font-size:100%;}
 footer{
   height: 50px;
   width: 100%;
-  background-color: #999;
-  color: #111;
+  background-color: #252525;
+  color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 50px;
+}
+footer p {
+  color: #fff;
 }
 
 /************ IMG **************/
@@ -635,19 +637,165 @@ footer{
 .p-130x {
 	font-size: 18px;
 	color: rgb(37, 37, 37);
+  margin-left: -20px;
 }
 .p-315x {
 	font-size: 44px;
 	color: rgb(37, 37, 37);
+  margin-left: -50px;
 }
 .p-500x{
 		font-size: 70px;
 		color: rgb(37, 37, 37);
+    margin-left: -80px;
 }
 
 .img-bg {
 	width: 100%;
   margin-top: 20px;
+}
+
+/************ ICONS **************/
+
+input, fieldset {
+  font-family: sans-serif;
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+input {
+  color: inherit;
+  line-height: 1.5;
+  height: 1.5em;
+  padding: .25em 0;
+}
+input:focus {
+  outline: none;
+  box-shadow: inset 0 -2px #449fdb;
+}
+.glyph {
+  font-size: 16px;
+  width: 15em;
+  padding-bottom: 1em;
+  margin-right: 4em;
+  float: left;
+  overflow: hidden;
+}
+.liga {
+  width: 80%;
+  width: calc(100% - 2.5em);
+}
+.fgc1 {
+  color: #999;
+}
+p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.mls {
+  margin-left: .25em;
+  font-family: "Helvetica Neue", Helvetica;
+  font-size: 25px;
+  color: #555;
+}
+.pbs, .pvs {
+  padding-bottom: .25em;
+}
+.pvs, .pts {
+  padding-top: .25em;
+}
+.unit {
+  float: left;
+  color: #555;
+}
+.unitRight {
+  float: right;
+}
+.size1of2 {
+  width: 50%;
+}
+.size1of1 {
+  width: 100%;
+}
+.clearfix {
+  font-family: 'icons' ;
+  margin-top: 20px;
+}
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.hidden-true {
+  display: none;
+}
+.fs0 {
+  font-size: 16px;
+      margin-top: 0;
+}
+.fs1 {
+  font-size: 32px;
+}
+
+
+
+.icon-moins:before {
+  content: "\e900";
+  color: #555;
+}
+.icon-plus:before {
+  content: "\e901";
+  color: #555;
+}
+.icon-coeur:before {
+  content: "\e902";
+  color: #555;
+}
+.icon-game:before {
+  content: "\e903";
+  color: #555;
+}
+.icon-history:before {
+  content: "\e904";
+  color: #555;
+}
+.icon-house:before {
+  content: "\e905";
+  color: #555;
+}
+.icon-lizard:before {
+  content: "\e906";
+  color: #555;
+}
+.icon-mouse:before {
+  content: "\e907";
+  color: #555;
+}
+.icon-paper:before {
+  content: "\e908";
+  color: #555;
+}
+.icon-pouce:before {
+  content: "\e909";
+  color: #555;
+}
+.icon-rock:before {
+  content: "\e90a";
+  color: #555;
+}
+.icon-rules:before {
+  content: "\e90b";
+}
+.icon-scissors:before {
+  content: "\e90c";
+  color: #555;
+}
+.icon-spock:before {
+  content: "\e90d";
+  color: #555;
 }
 /************ IAN MSG **************/
 
